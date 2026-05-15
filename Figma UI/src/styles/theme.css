@@ -1,0 +1,304 @@
+@custom-variant dark (&:is(.dark *));
+
+/* ══════════════════════════════════════════════════════════
+   PROBLEMLENS DESIGN TOKENS
+   Single source of truth — all screens and components
+   draw from these values.
+   Prefixed --pl-* to avoid collisions with Tailwind internals.
+══════════════════════════════════════════════════════════ */
+:root {
+
+  /* ── Backgrounds ─────────────────────────────────────── */
+  --pl-bg-base:           #0D0D1A;   /* Screen canvas                      */
+  --pl-bg-surface:        #1A1A2E;   /* Cards, sheets, modals              */
+  --pl-bg-surface-hover:  #222240;   /* Card press / hover                 */
+  --pl-bg-surface-subtle: #13132A;   /* Footer containers, secondary panels*/
+  --pl-bg-overlay:        rgba(0,0,0,0.55); /* Behind sheets / modals      */
+
+  /* ── Text ────────────────────────────────────────────── */
+  --pl-text-primary:   #FFFFFF;  /* Titles, headlines, important labels    */
+  --pl-text-secondary: #D0D0E0;  /* Body text, pain points, solutions      */
+  --pl-text-muted:     #A0A0B0;  /* Descriptions, summaries, subtexts      */
+  --pl-text-dim:       #808090;  /* Metadata tags, placeholders, hints     */
+  --pl-text-faint:     #606070;  /* Section labels, scale markers          */
+  --pl-text-ghost:     #505060;  /* Swipe hints, placeholders, disabled    */
+
+  /* ── Borders & Dividers ──────────────────────────────── */
+  --pl-border-subtle:  rgba(255,255,255,0.06); /* Card borders, nav borders */
+  --pl-border-default: #333345;                /* Inputs, inactive chips    */
+  --pl-border-focus:   #00E676;                /* Active selections, focus  */
+
+  /* ── Accent ──────────────────────────────────────────── */
+  --pl-accent-primary:      #00E676;             /* CTAs, active, scores    */
+  --pl-accent-primary-dark: #00C853;             /* Gradient endpoint       */
+  --pl-accent-glow:         rgba(0,230,118,0.15);/* Focus rings, glows      */
+  --pl-accent-shadow:       rgba(0,230,118,0.25);/* Button elevation        */
+
+  /* ── Semantic Score Colors ───────────────────────────── */
+  --pl-score-high:   #00E676; /* 8–10 — strong signal   */
+  --pl-score-medium: #FFB300; /* 5–7  — moderate signal */
+  --pl-score-low:    #FF5252; /* 1–4  — weak signal     */
+
+  /* ── UI Element Colors ───────────────────────────────── */
+  --pl-track-bg:      #2A2A3E; /* Slider / progress track BG  */
+  --pl-toggle-off:    #333345; /* Inactive toggle track       */
+  --pl-toggle-on:     #00E676; /* Active toggle track         */
+  --pl-dot-inactive:  #333345; /* Page indicator dots         */
+  --pl-dot-active:    #00E676; /* Current page dot            */
+  --pl-empty-icon:    #333345; /* Empty state illustrations   */
+
+  /* ── Sector Color Map ────────────────────────────────── */
+  --pl-sector-healthcare:  #26C6DA;
+  --pl-sector-fintech:     #FFB300;
+  --pl-sector-education:   #7C4DFF;
+  --pl-sector-agriculture: #66BB6A;
+  --pl-sector-govtech:     #42A5F5;
+  --pl-sector-cleantech:   #26A69A;
+  --pl-sector-employment:  #EC407A;
+  --pl-sector-creator:     #FFA726;
+  --pl-sector-retail:      #FFB300;
+  --pl-sector-rare-disease:#EF5350;
+
+  /* ── Spacing (4px base unit) ─────────────────────────── */
+  --pl-space-1:   4px;
+  --pl-space-2:   6px;
+  --pl-space-3:   8px;
+  --pl-space-4:   10px;
+  --pl-space-5:   12px;
+  --pl-space-6:   14px;
+  --pl-space-7:   16px;
+  --pl-space-8:   20px;
+  --pl-space-9:   24px;
+  --pl-space-10:  28px;
+  --pl-space-11:  32px;
+  --pl-space-12:  40px;
+
+  /* ── Border Radius ───────────────────────────────────── */
+  --pl-radius-sm:   6px;
+  --pl-radius-md:   8px;
+  --pl-radius-lg:   10px;
+  --pl-radius-xl:   12px;
+  --pl-radius-2xl:  14px;
+  --pl-radius-3xl:  16px;
+  --pl-radius-4xl:  20px;
+  --pl-radius-full: 9999px;
+
+  /* ── Elevation & Shadows ─────────────────────────────── */
+  --pl-shadow-none:   none;
+  --pl-shadow-sm:     0 2px 8px  rgba(0,0,0,0.20);
+  --pl-shadow-md:     0 4px 16px rgba(0,0,0,0.25);
+  --pl-shadow-lg:     0 4px 24px rgba(0,0,0,0.30);
+  --pl-shadow-glow:   0 4px 20px rgba(0,230,118,0.25);
+  --pl-shadow-slider: 0 2px 8px  rgba(0,0,0,0.30);
+
+  /* ── Type Scale ──────────────────────────────────────── */
+  --pl-text-4xl:  36px; /* Display — opportunity score hero  */
+  --pl-text-3xl:  28px; /* Hero — splash name, CTA headlines */
+  --pl-text-2xl:  26px; /* Title Large — onboarding, feed    */
+  --pl-text-xl:   24px; /* Title — deep dive headline        */
+  --pl-text-lg:   22px; /* Title Small — screen headers      */
+  --pl-text-base: 16px; /* Body Large — compact card title   */
+  --pl-text-sm:   15px; /* Body — pain summaries, subtexts   */
+  --pl-text-xs:   14px; /* Caption Large — labels, nav       */
+  --pl-text-2xs:  13px; /* Caption — section labels, chips   */
+  --pl-text-3xs:  11px; /* Micro — badges, score labels      */
+  --pl-text-4xs:  10px; /* Nano — bottom nav, compact tags   */
+
+  /* ── Font Families ───────────────────────────────────── */
+  --pl-font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --pl-font-display: 'Outfit', 'Inter', -apple-system, sans-serif;
+  --pl-font-mono:    'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+
+  /* ── Animation Durations ─────────────────────────────── */
+  --pl-duration-fast:   100ms; /* Press feedback, color shifts     */
+  --pl-duration-normal: 200ms; /* Toggles, chevrons, chip select   */
+  --pl-duration-smooth: 300ms; /* Screen transitions, sheet entry  */
+  --pl-duration-slow:   600ms; /* Score bar fill animation         */
+
+  /* ── Easing Curves ───────────────────────────────────── */
+  --pl-ease-out:      cubic-bezier(0.0,  0.0, 0.2, 1); /* Entrances        */
+  --pl-ease-in:       cubic-bezier(0.4,  0.0, 1.0, 1); /* Exits            */
+  --pl-ease-standard: cubic-bezier(0.4,  0.0, 0.2, 1); /* General          */
+  --pl-ease-bounce:   cubic-bezier(0.34, 1.56, 0.64,1); /* Playful micro   */
+
+  /* ── Tailwind / Shadcn base overrides (dark-first) ──── */
+  --font-size: 16px;
+  --background: #0D0D1A;
+  --foreground: #FFFFFF;
+  --card: #1A1A2E;
+  --card-foreground: #FFFFFF;
+  --popover: #1A1A2E;
+  --popover-foreground: #FFFFFF;
+  --primary: #00E676;
+  --primary-foreground: #0D0D1A;
+  --secondary: #1A1A2E;
+  --secondary-foreground: #FFFFFF;
+  --muted: #1A1A2E;
+  --muted-foreground: #808090;
+  --accent: #222240;
+  --accent-foreground: #FFFFFF;
+  --destructive: #FF5252;
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(255,255,255,0.06);
+  --input: #1A1A2E;
+  --input-background: #1A1A2E;
+  --switch-background: #333345;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #00E676;
+  --chart-1: #00E676;
+  --chart-2: #FFB300;
+  --chart-3: #26C6DA;
+  --chart-4: #7C4DFF;
+  --chart-5: #EC407A;
+  --radius: 0.875rem; /* 14px — closest to ProblemLens --pl-radius-2xl */
+  --sidebar: #0D0D1A;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #00E676;
+  --sidebar-primary-foreground: #0D0D1A;
+  --sidebar-accent: #1A1A2E;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(255,255,255,0.06);
+  --sidebar-ring: #00E676;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm:  calc(var(--radius) - 8px);  /* 6px  */
+  --radius-md:  calc(var(--radius) - 6px);  /* 8px  */
+  --radius-lg:  calc(var(--radius) - 4px);  /* 10px */
+  --radius-xl:  calc(var(--radius) - 2px);  /* 12px */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: var(--font-size);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--pl-bg-base);
+    color: var(--pl-text-primary);
+    font-family: var(--pl-font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Default element styles ─────────────────────────── */
+  h1 {
+    font-family: var(--pl-font-display);
+    font-size: var(--pl-text-2xl);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--pl-text-primary);
+  }
+
+  h2 {
+    font-family: var(--pl-font-display);
+    font-size: var(--pl-text-xl);
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--pl-text-primary);
+  }
+
+  h3 {
+    font-size: var(--pl-text-lg);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--pl-text-primary);
+  }
+
+  h4 {
+    font-size: var(--pl-text-base);
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--pl-text-primary);
+  }
+
+  p {
+    font-size: var(--pl-text-sm);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--pl-text-muted);
+  }
+
+  label {
+    font-size: var(--pl-text-sm);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  button {
+    font-family: var(--pl-font-sans);
+    font-size: var(--pl-text-sm);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  input {
+    font-family: var(--pl-font-sans);
+    font-size: var(--pl-text-sm);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* ── Accessibility: reduced motion ──────────────────── */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ── Scrollbar: hide globally for immersive feel ────── */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}

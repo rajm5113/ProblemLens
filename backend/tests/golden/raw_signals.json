@@ -1,0 +1,17 @@
+[
+  {
+    "signal_id": "sig-001",
+    "raw_text": "ASHA workers struggle with delayed reporting because paper records get lost.",
+    "expected_sector": "Healthcare"
+  },
+  {
+    "signal_id": "sig-002",
+    "raw_text": "Small kirana owners can't access formal credit because they lack digital records.",
+    "expected_sector": "Fintech / Retail"
+  },
+  {
+    "signal_id": "sig-003",
+    "raw_text": "Students are frustrated by deadlines scattered across multiple LMS platforms.",
+    "expected_sector": "Education"
+  }
+]

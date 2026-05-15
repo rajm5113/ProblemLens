@@ -1,0 +1,10 @@
+[
+  {
+    "id": "PIP-012",
+    "numeric_id": 12,
+    "title": "Rural patient data reporting breaks when ASHA workers rely on paper records",
+    "opportunity_score": 8,
+    "root_cause": "Frontline health workflows still depend on fragile paper records because digital tools are not designed for offline field use.",
+    "tags": ["ASHA Workers", "India", "Very High"]
+  }
+]

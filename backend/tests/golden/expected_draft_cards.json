@@ -1,0 +1,10 @@
+[
+  {
+    "signal_id": "sig-asha",
+    "sector": "Healthcare",
+    "user_type": ["ASHA Workers", "Rural Patients"],
+    "geography": "India",
+    "frequency": "Very High",
+    "confidence": "High"
+  }
+]

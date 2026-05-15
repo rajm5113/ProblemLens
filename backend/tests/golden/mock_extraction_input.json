@@ -1,0 +1,20 @@
+[
+  {
+    "signal_id": "sig-asha",
+    "platform": "Reddit",
+    "url": "https://example.com/asha",
+    "raw_text": "Rural ASHA workers struggle because paper patient records get lost during field visits. PHC doctors receive delayed symptom updates and outbreak detection suffers."
+  },
+  {
+    "signal_id": "sig-kirana",
+    "platform": "Reddit",
+    "url": "https://example.com/kirana",
+    "raw_text": "Small kirana owners can't access formal credit because most sales are cash-based and they lack digital records."
+  },
+  {
+    "signal_id": "sig-students",
+    "platform": "Product Hunt",
+    "url": "https://example.com/students",
+    "raw_text": "Students are frustrated by deadlines scattered across Google Classroom, Moodle, Teams, and email."
+  }
+]

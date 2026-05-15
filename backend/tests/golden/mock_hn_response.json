@@ -1,0 +1,17 @@
+{
+  "topstories": [101, 102],
+  "items": {
+    "101": {
+      "id": 101,
+      "type": "story",
+      "title": "Small teams struggle to debug cloud outages without DevOps expertise",
+      "text": "Debugging is inefficient and costly for small teams.",
+      "by": "founder"
+    },
+    "102": {
+      "id": 102,
+      "type": "comment",
+      "text": "Not a story"
+    }
+  }
+}

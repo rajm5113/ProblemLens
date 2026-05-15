@@ -1,0 +1,15 @@
+[
+  {
+    "severity": 9,
+    "market_potential": 8,
+    "ai_feasibility": 8,
+    "competition": 3,
+    "rationale": {
+      "severity_reason": "Delayed rural reporting can harm public health response.",
+      "market_potential_reason": "India has a large frontline health worker network.",
+      "ai_feasibility_reason": "Voice capture and summarization are mature AI workflows.",
+      "competition_reason": "Localized offline-first tools remain limited."
+    },
+    "score_confidence": 0.86
+  }
+]

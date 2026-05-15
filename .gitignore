@@ -1,0 +1,32 @@
+# === Python ===
+backend/.venv/
+backend/.env
+backend/logs/
+backend/runs/
+backend/store/*.db
+backend/store/*.db-*
+backend/store/*.jsonl
+__pycache__/
+*.py[cod]
+.pytest_cache/
+backend/.pytest_cache/
+backend/.pytest_tmp/
+
+# === Frontend ===
+app/node_modules/
+app/dist/
+app/.env
+
+# === Docker ===
+*.log
+docker-compose.override.yml
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db

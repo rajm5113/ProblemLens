@@ -1,0 +1,17 @@
+[
+  {
+    "signal_id": "sig-asha",
+    "title": "Rural patient data reporting breaks when ASHA workers rely on paper records",
+    "pain_summary": "Lost paper records delay symptom reporting and weaken public health response.",
+    "pain_points": [
+      "Paper records can be lost during field visits.",
+      "PHC doctors receive delayed symptom updates."
+    ],
+    "solutions": [
+      "Offline mobile record capture for ASHA workers.",
+      "Voice-first reporting with automatic PHC summaries."
+    ],
+    "source_label": "Reddit",
+    "extraction_confidence": 0.9
+  }
+]

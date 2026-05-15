@@ -1,0 +1,552 @@
+[
+  {
+    "id": "PIP-001",
+    "numeric_id": 1,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Students struggle to track multiple course deadlines across platforms",
+    "pain_summary": "No single unified view of tasks across LMS platforms leads to missed assignments.",
+    "description": "No single unified view of tasks across LMS platforms leads to missed assignments.",
+    "sector": "Education",
+    "user_type": [
+      "College Students"
+    ],
+    "geography": "India",
+    "frequency": "High",
+    "tags": [
+      "College Students",
+      "India",
+      "High"
+    ],
+    "pain_points": [
+      "Deadlines scattered across Google Classroom, Moodle, Teams, and email",
+      "No unified calendar view leads to missed assignments and grade penalties",
+      "Constant context-switching between platforms increases cognitive load"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "Universal LMS aggregator that pulls deadlines from all platforms via API",
+      "AI-powered priority engine that ranks tasks by urgency and effort required",
+      "Smart notification system with personalized reminders based on work habits"
+    ],
+    "source": "Reddit (r/india), Product Hunt",
+    "confidence": "Medium",
+    "signal_count": 1,
+    "scores": {
+      "severity": 7,
+      "market_potential": 7,
+      "ai_feasibility": 8,
+      "competition": 6,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 7,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-002",
+    "numeric_id": 2,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Rural ASHA workers lack digital tools to record and report patient data accurately",
+    "pain_summary": "Paper-based records get lost or damaged in field conditions, delaying outbreak detection.",
+    "description": "Paper-based records get lost or damaged in field conditions, delaying outbreak detection.",
+    "sector": "Healthcare",
+    "user_type": [
+      "ASHA Workers",
+      "Rural Patients"
+    ],
+    "geography": "India",
+    "frequency": "Very High",
+    "tags": [
+      "ASHA Workers",
+      "India",
+      "Very High"
+    ],
+    "pain_points": [
+      "Paper-based records get lost or damaged in field conditions",
+      "No real-time reporting to PHCs — delays outbreak detection by days",
+      "Low digital literacy makes complex apps unusable for frontline workers"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "Voice-first Hindi app with offline data sync for field conditions",
+      "WhatsApp-based symptom reporting via structured conversational chat",
+      "AI agent to auto-summarize field reports for PHC doctors"
+    ],
+    "source": "Startup India, Smart India Hackathon",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 9,
+      "market_potential": 8,
+      "ai_feasibility": 8,
+      "competition": 3,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 9,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-003",
+    "numeric_id": 3,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Small kirana store owners cannot access credit due to lack of formal financial records",
+    "pain_summary": "Forced to rely on high-interest informal moneylenders due to invisible cash-based operations.",
+    "description": "Forced to rely on high-interest informal moneylenders due to invisible cash-based operations.",
+    "sector": "Fintech / Retail",
+    "user_type": [
+      "Kirana Store Owners"
+    ],
+    "geography": "India",
+    "frequency": "Very High",
+    "tags": [
+      "Kirana Store Owners",
+      "India",
+      "Very High"
+    ],
+    "pain_points": [
+      "No GST filing or digital transaction history to show formal lenders",
+      "Forced to rely on high-interest informal moneylenders for working capital",
+      "Cash-based operations remain entirely invisible to formal credit systems"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "AI-powered bookkeeping app that auto-generates credit profiles from sales data",
+      "UPI transaction analysis to build alternative credit scores for unbanked merchants",
+      "Vernacular-language onboarding for low-literacy users across Tier 2/3 cities"
+    ],
+    "source": "Reddit (r/india), Startup India",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 8,
+      "market_potential": 9,
+      "ai_feasibility": 7,
+      "competition": 7,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 8,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-004",
+    "numeric_id": 4,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Farmers receive inaccurate or delayed weather and crop advisory information",
+    "pain_summary": "Generic advisories not tailored to local soil or microclimate conditions reduce yield.",
+    "description": "Generic advisories not tailored to local soil or microclimate conditions reduce yield.",
+    "sector": "Agriculture",
+    "user_type": [
+      "Smallholder Farmers"
+    ],
+    "geography": "India",
+    "frequency": "High",
+    "tags": [
+      "Smallholder Farmers",
+      "India",
+      "High"
+    ],
+    "pain_points": [
+      "National weather services lack block-level or field-level granularity for farmers",
+      "Crop advisory SMS services provide generic advice ignoring local soil type and crop variety",
+      "Delayed or incorrect advisory leads to wrong pesticide use and crop failure"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "Hyperlocal weather prediction using satellite + IoT sensor networks at village level",
+      "AI crop advisor trained on regional datasets to deliver personalized voice-based guidance",
+      "WhatsApp-integrated advisory bot with vernacular language support for low-literacy farmers"
+    ],
+    "source": "Startup India, NASSCOM",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 9,
+      "market_potential": 9,
+      "ai_feasibility": 7,
+      "competition": 5,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 9,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-005",
+    "numeric_id": 5,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "First-time job seekers in Tier 2/3 cities cannot navigate the interview process",
+    "pain_summary": "No access to career counselors or professional networks leaves candidates underprepared.",
+    "description": "No access to career counselors or professional networks leaves candidates underprepared.",
+    "sector": "Employment / EdTech",
+    "user_type": [
+      "First-time Job Seekers",
+      "Tier 2/3 City Youth"
+    ],
+    "geography": "India",
+    "frequency": "Very High",
+    "tags": [
+      "First-time Job Seekers",
+      "India",
+      "Very High"
+    ],
+    "pain_points": [
+      "No mentors or career counselors accessible in smaller cities for interview prep",
+      "Candidates unaware of standard resume formats and professional networking norms",
+      "English communication barrier blocks placement at MNC and startup roles"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "AI mock interview coach with real-time feedback in regional languages",
+      "Peer mentorship marketplace matching aspirants with working professionals from same city",
+      "Skill gap analyzer that maps candidate profile to job description and suggests learning path"
+    ],
+    "source": "LinkedIn India, NASSCOM",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 8,
+      "market_potential": 9,
+      "ai_feasibility": 9,
+      "competition": 4,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 8,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-006",
+    "numeric_id": 6,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Hospital OPD queues cause patients to wait 4–6 hours for a 5-minute consultation",
+    "pain_summary": "No intelligent slot booking or triage system at public hospitals wastes patients' time.",
+    "description": "No intelligent slot booking or triage system at public hospitals wastes patients' time.",
+    "sector": "Healthcare",
+    "user_type": [
+      "OPD Patients",
+      "Hospital Staff"
+    ],
+    "geography": "India",
+    "frequency": "Very High",
+    "tags": [
+      "OPD Patients",
+      "India",
+      "Very High"
+    ],
+    "pain_points": [
+      "Physical token systems create crowding and long waits at government hospital OPDs",
+      "No pre-triage system means critical patients wait alongside minor ailment cases",
+      "Patients travel far without knowing doctor availability, leading to wasted trips"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "AI-powered triage chatbot that pre-classifies case severity and routes to correct doctor",
+      "SMS-based slot booking system accessible without smartphones or internet access",
+      "Real-time OPD queue dashboard visible on hospital entrance screens and mobile app"
+    ],
+    "source": "Smart India Hackathon, NASSCOM",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 8,
+      "market_potential": 8,
+      "ai_feasibility": 8,
+      "competition": 6,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 8,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-007",
+    "numeric_id": 7,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Municipal solid waste segregation at source remains near-zero despite government mandates",
+    "pain_summary": "Residents don't know or follow dry/wet/hazardous classification rules consistently.",
+    "description": "Residents don't know or follow dry/wet/hazardous classification rules consistently.",
+    "sector": "CleanTech",
+    "user_type": [
+      "Urban Residents",
+      "Municipal Corporations"
+    ],
+    "geography": "India",
+    "frequency": "Very High",
+    "tags": [
+      "Urban Residents",
+      "India",
+      "Very High"
+    ],
+    "pain_points": [
+      "Residents lack clear, contextual guidance on waste classification at the moment of disposal",
+      "Mixed waste leads to 60%+ of recyclables going to landfill instead of recycling chains",
+      "Municipal apps are complex and have low adoption among non-tech-savvy residents"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "AI image recognition app that identifies waste type from a photo and tells how to dispose",
+      "Gamified household waste tracking with monthly scores and community leaderboards",
+      "Integration with municipal collection schedule to remind residents before pickup day"
+    ],
+    "source": "Smart India Hackathon, Reddit (r/india)",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 8,
+      "market_potential": 8,
+      "ai_feasibility": 8,
+      "competition": 3,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 8,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-008",
+    "numeric_id": 8,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Low-income citizens cannot afford legal aid for everyday disputes and rights violations",
+    "pain_summary": "Legal aid clinics are understaffed and under-accessed, leaving most disputes unresolved.",
+    "description": "Legal aid clinics are understaffed and under-accessed, leaving most disputes unresolved.",
+    "sector": "Legal / GovTech",
+    "user_type": [
+      "Low-income Citizens",
+      "Legal Aid Workers"
+    ],
+    "geography": "India",
+    "frequency": "High",
+    "tags": [
+      "Low-income Citizens",
+      "India",
+      "High"
+    ],
+    "pain_points": [
+      "Legal consultation costs ₹2000–10,000 per hour, unaffordable for low-income households",
+      "Legal aid clinics lack awareness — most citizens don't know they exist or qualify",
+      "Complex legal language in documents creates dependency on intermediaries who exploit users"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "AI legal advisor trained on Indian law that answers questions in plain language for free",
+      "Document simplification tool that translates legal notices into plain Hindi/regional languages",
+      "Community paralegal training program that creates local legal champions in each ward"
+    ],
+    "source": "Startup India, Smart India Hackathon",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 8,
+      "market_potential": 8,
+      "ai_feasibility": 8,
+      "competition": 4,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 8,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-009",
+    "numeric_id": 9,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Sickle cell disease patients in tribal India receive fragmented, inconsistent care",
+    "pain_summary": "Lack of specialist access and disease management tools leads to preventable crises.",
+    "description": "Lack of specialist access and disease management tools leads to preventable crises.",
+    "sector": "Healthcare",
+    "user_type": [
+      "Sickle Cell Patients",
+      "Tribal Health Workers"
+    ],
+    "geography": "India",
+    "frequency": "High",
+    "tags": [
+      "Sickle Cell Patients",
+      "India",
+      "High"
+    ],
+    "pain_points": [
+      "Tribal areas have near-zero hematologist coverage, forcing patients to travel 100+ km",
+      "No disease management app exists for tracking pain episodes, triggers, and medication",
+      "Screening programs identify patients but lack follow-up infrastructure to manage them"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "Offline-capable patient registry app for ASHA workers to track and manage sickle cell cases",
+      "AI symptom monitor that alerts caregivers to early signs of pain crisis via SMS",
+      "Tele-hematology platform connecting tribal health centers with specialist doctors remotely"
+    ],
+    "source": "NASSCOM, Startup India",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 9,
+      "market_potential": 8,
+      "ai_feasibility": 8,
+      "competition": 2,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 9,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-010",
+    "numeric_id": 10,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Independent creators in India cannot receive international payments without high fees",
+    "pain_summary": "Complex KYC and 3–5% conversion fees make global monetization unviable for small creators.",
+    "description": "Complex KYC and 3–5% conversion fees make global monetization unviable for small creators.",
+    "sector": "Fintech / Retail",
+    "user_type": [
+      "Independent Creators",
+      "Freelancers"
+    ],
+    "geography": "India",
+    "frequency": "High",
+    "tags": [
+      "Independent Creators",
+      "India",
+      "High"
+    ],
+    "pain_points": [
+      "PayPal charges 4.4% + fixed fee on international transfers into Indian accounts",
+      "Stripe and Paddle are unavailable for Indian-registered individual creators",
+      "Complex FEMA compliance and bank paperwork discourages creator exports"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "Creator-focused cross-border payment wrapper with auto-compliance and minimal fees",
+      "UPI-linked international invoice system that handles FX conversion transparently",
+      "Escrow + milestone payment tool designed for digital goods and service creators"
+    ],
+    "source": "Reddit (r/india), Product Hunt",
+    "confidence": "Medium",
+    "signal_count": 1,
+    "scores": {
+      "severity": 7,
+      "market_potential": 8,
+      "ai_feasibility": 8,
+      "competition": 6,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 7,
+    "trend_status": "New"
+  },
+  {
+    "id": "PIP-011",
+    "numeric_id": 11,
+    "created_at": "2026-05-09T10:00:00.000Z",
+    "updated_at": "2026-05-09T10:00:00.000Z",
+    "title": "Small teams can't monitor, debug, and scale their cloud apps without expensive DevOps expertise",
+    "pain_summary": "Deploying and maintaining cloud infrastructure demands specialist knowledge most early-stage startups simply cannot afford to hire.",
+    "description": "Deploying and maintaining cloud infrastructure demands specialist knowledge most early-stage startups simply cannot afford to hire.",
+    "sector": "Technology",
+    "user_type": [
+      "Startup Founders",
+      "Indie Developers",
+      "Engineering Leads"
+    ],
+    "geography": "India / Global",
+    "frequency": "Very High",
+    "tags": [
+      "Startup Founders",
+      "India / Global",
+      "Very High"
+    ],
+    "pain_points": [
+      "Cloud provider dashboards (AWS, GCP, Azure) are overwhelming for non-DevOps engineers",
+      "Debugging production outages requires reading cryptic logs scattered across multiple services",
+      "Auto-scaling misconfigurations lead to surprise bills or unexpected downtime",
+      "No affordable, opinionated tooling exists for teams of 1–5 developers"
+    ],
+    "root_cause": null,
+    "solutions": [
+      "AI-driven infra copilot that translates plain-language requests into cloud configuration",
+      "Unified observability dashboard with smart alerting tailored to small team workflows",
+      "Cost-anomaly detector that flags and explains unexpected billing spikes in real time",
+      "One-click deploy templates with sane defaults for the most common startup stack patterns"
+    ],
+    "source": "Hacker News, Indie Hackers, YC community forums",
+    "confidence": "High",
+    "signal_count": 1,
+    "scores": {
+      "severity": 8,
+      "market_potential": 9,
+      "ai_feasibility": 9,
+      "competition": 5,
+      "rationale": {
+        "severity_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "market_potential_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "ai_feasibility_reason": "Seed score imported from the manually curated Phase 2 dataset.",
+        "competition_reason": "Seed score imported from the manually curated Phase 2 dataset."
+      },
+      "score_confidence": 0.85
+    },
+    "opportunity_score": 9,
+    "trend_status": "New"
+  }
+]
