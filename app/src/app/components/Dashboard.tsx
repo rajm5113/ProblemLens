@@ -8,7 +8,7 @@ import { useNotes } from "../contexts/NotesContext";
 import { useProblems } from "../contexts/ProblemsContext";
 import { useTheme } from "../contexts/ThemeContext";
 import { AnalyticsSkeleton } from "./analytics";
-import { BottomNav } from "./BottomNav";
+
 
 const AnalyticsOverview = lazy(() =>
   import("./analytics/AnalyticsOverview").then((module) => ({ default: module.AnalyticsOverview }))
@@ -348,12 +348,6 @@ export function Dashboard({
         </AnimatePresence>
       </div>
 
-      <BottomNav
-        active="dashboard"
-        onFeedTap={onGoToFeed}
-        onSavedTap={onSavedTap}
-        onDashboardTap={onDashboardTap}
-      />
     </main>
   );
 }

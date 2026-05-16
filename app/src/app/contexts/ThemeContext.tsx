@@ -108,9 +108,9 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     try {
-      return (localStorage.getItem("pl_theme") as Theme) || "dark";
+      return (localStorage.getItem("pl_theme") as Theme) || "light";
     } catch {
-      return "dark";
+      return "light";
     }
   });
 

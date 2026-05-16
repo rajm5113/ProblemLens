@@ -5,7 +5,6 @@ import { useBookmarks } from "../contexts/BookmarksContext";
 import { useNotes } from "../contexts/NotesContext";
 import { useProblems } from "../contexts/ProblemsContext";
 import { useTheme } from "../contexts/ThemeContext";
-import { BottomNav } from "./BottomNav";
 
 interface SavedScreenProps {
   onCardTap: (id: string) => void;
@@ -78,12 +77,6 @@ export function SavedScreen({ onCardTap, onGoToFeed, onDashboardTap }: SavedScre
         )}
       </div>
 
-      <BottomNav
-        active="saved"
-        onFeedTap={onGoToFeed}
-        onSavedTap={() => {}}
-        onDashboardTap={onDashboardTap}
-      />
     </div>
   );
 }
