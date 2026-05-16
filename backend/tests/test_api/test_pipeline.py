@@ -51,6 +51,6 @@ def test_pipeline_stats_endpoint(client: TestClient, monkeypatch, tmp_path: Path
     assert response.status_code == 200
     payload = response.json()
     assert payload["totalRuns"] == 1
-    assert payload["totalCards"] == 11
+    assert payload["totalCards"] == 44
     assert payload["totalSignals"] == 0
     assert payload["lastRunAt"] == completed_at

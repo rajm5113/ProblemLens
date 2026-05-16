@@ -14,7 +14,7 @@ def test_status_command(monkeypatch, tmp_path: Path, capsys, problem_card) -> No
     card_store.save(problem_card)
     signal_store = SignalStore(tmp_path / "signals.jsonl")
 
-    monkeypatch.setattr(run_pipeline, "CardStore", lambda: card_store)
+    monkeypatch.setattr(run_pipeline, "get_card_store", lambda seed=True: card_store)
     monkeypatch.setattr(run_pipeline, "SignalStore", lambda: signal_store)
 
     run_pipeline.main(["status"])
@@ -38,7 +38,7 @@ def test_trends_command(monkeypatch, tmp_path: Path, capsys, problem_card) -> No
     card_store = CardStore(tmp_path / "cards.db")
     card_store.save(card)
 
-    monkeypatch.setattr(run_pipeline, "CardStore", lambda: card_store)
+    monkeypatch.setattr(run_pipeline, "get_card_store", lambda seed=True: card_store)
 
     run_pipeline.main(["trends"])
 

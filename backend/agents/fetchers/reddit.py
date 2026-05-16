@@ -52,7 +52,15 @@ class RedditFetcher(BaseFetcher):
             return []
 
         posts: list[RawPost] = []
-        entries = response.json().get("data", [])
+        raw_data = response.json().get("data", response.json())
+        # Reddit native format: {data: {children: [{data: {...}}, ...]}}
+        if isinstance(raw_data, dict) and "children" in raw_data:
+            entries = [child.get("data", child) for child in raw_data["children"]]
+        # PullPush format: {data: [{...}, ...]}
+        elif isinstance(raw_data, list):
+            entries = raw_data
+        else:
+            entries = []
 
         for data in entries[: config.max_items]:
             permalink = data.get("permalink", "")

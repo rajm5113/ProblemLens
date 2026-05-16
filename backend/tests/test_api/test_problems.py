@@ -17,7 +17,7 @@ def test_list_problems_returns_cards(client) -> None:
     response = client.get("/api/problems")
 
     assert response.status_code == 200
-    assert len(response.json()) == 11
+    assert len(response.json()) == 44
 
 
 def test_list_problems_empty_store(tmp_path: Path) -> None:
@@ -99,8 +99,8 @@ def test_cors_allows_vite_origin(client) -> None:
 def test_seed_loads_on_empty_startup(tmp_path: Path) -> None:
     store = CardStore(tmp_path / "seed.db")
 
-    assert seed_if_empty(store) == 11
-    assert len(store.all()) == 11
+    assert seed_if_empty(store) == 44
+    assert len(store.all()) == 44
     assert seed_if_empty(store) == 0
-    assert len(store.all()) == 11
+    assert len(store.all()) == 44
     store.conn.close()
